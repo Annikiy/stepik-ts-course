@@ -1,9 +1,9 @@
 import {ICommandExecFfmpeg, IFfmpegInput} from "./ffmpeg.types";
 import {AbstractCommandExecutor, FileService, PromptService} from "../../core";
 import {ChildProcessWithoutNullStreams, spawn} from "node:child_process";
-import {IStreamLogger} from "../../types";
 import {FfmpegBuilder} from "./ffmpeg.builder";
-import {StreamHandler} from "../../core/handlers/stream.handler";
+import {StreamHandler} from "../../core";
+import {IStreamLogger} from "../../core/handlers/stream-logger.interface";
 
 export class FfmpegExecutor extends AbstractCommandExecutor<IFfmpegInput> {
     private fileService = new FileService();

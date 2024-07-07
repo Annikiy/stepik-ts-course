@@ -9,6 +9,7 @@
   "author": "AnnSkr",
   "license": "ISC",
   "dependencies": {
+    "ffmpeg": "^0.0.4",
     "inquirer": "^8.0.0"
   },
   "devDependencies": {
